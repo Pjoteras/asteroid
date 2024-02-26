@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     //wspó³rzêdne gracza
     Transform player;
-    public float cameraHeight = 10.0f;
+    public float cameraHeight = 15.0f;
     //prêdkoœæ kamery
     
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         //oblicz docelow¹ pozycjê kamery
-        Vector3 targetPosition = player.position + Vector3.up * 10;
+        Vector3 targetPosition = player.position + Vector3.up * 15;
         //p³ynnie przesuñ kamerê w kierunku gracza
         //funckja Vector3.Lerp
         //p³ynnie przechodzi z pozycji pierwszego argumentu do drugiego w czasie trzeciego
